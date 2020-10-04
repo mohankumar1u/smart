@@ -1,0 +1,53 @@
+<!-- <ion-header [translucent]="true">
+   <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar> 
+  <h1>rooms</h1>
+</ion-header> -->
+<div id="container">
+  <div >
+    <ion-card *ngFor="let room of rooms let i = index" class="cards"  (click)="openPage(i)">
+      <ion-card-header text-center>
+        <p>{{room[0]}}</p>
+        <svg *ngIf ="room[0]=='livingroom'" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162" height="165" viewBox="0 0 162 165">
+          <defs>
+            <filter id="Rectangle_164" x="0" y="0" width="162" height="165" filterUnits="userSpaceOnUse">
+              <feOffset dy="3" input="SourceAlpha"/>
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feFlood flood-opacity="0.161"/>
+              <feComposite operator="in" in2="blur"/>
+              <feComposite in="SourceGraphic"/>
+            </filter>
+          </defs>
+          <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(9 6)">
+            <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_164)">
+              <rect id="Rectangle_164-2" data-name="Rectangle 164" width="144" height="147" rx="10" transform="translate(9 6)" fill="#e6c990"/>
+            </g>
+          </g>
+        </svg>
+        
+        
+        <svg *ngIf ="room[0]=='bedroom'" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162" height="165" viewBox="0 0 162 165">
+          <defs>
+            <filter id="Rectangle_165" x="0" y="0" width="162" height="165" filterUnits="userSpaceOnUse">
+              <feOffset dy="3" input="SourceAlpha"/>
+              <feGaussianBlur stdDeviation="3" result="blur"/>
+              <feFlood flood-opacity="0.161"/>
+              <feComposite operator="in" in2="blur"/>
+              <feComposite in="SourceGraphic"/>
+            </filter>
+          </defs>
+          <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_165)">
+            <rect id="Rectangle_165-2" data-name="Rectangle 165" width="144" height="147" rx="10" transform="translate(9 6)" fill="#e69090"/>
+          </g>
+        </svg>
+      </ion-card-header>
+      <ion-card-content text-center>        
+      </ion-card-content>
+    </ion-card>
+  </div>
+   
+<!-- </ion-content> -->
+</div>

@@ -1,0 +1,32 @@
+#Colorpicker {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid white;
+    border-radius: 100%;
+    left: 216px;
+    top: 466px;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    
+}
+#details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#canvas{
+    margin: 10% auto;
+    justify-content: center;
+}
+#pickedColor{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100%;
+}
+#apply{
+    background-color: white;
+}

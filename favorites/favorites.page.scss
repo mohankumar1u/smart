@@ -1,0 +1,297 @@
+
+#container {
+    height: 100vh;
+    background-color:#353535;
+    font-weight: 600;
+    overflow-y: scroll;
+  }
+#chandelier-name{
+  position: absolute;
+  right: 8px;
+}
+#Power1-name{
+  position: absolute;
+  right: 12px;
+}
+#TV-name{
+  position: absolute;
+  left: 29px;
+}
+.toolbar-container{
+    --background:  #353535;
+}
+
+.show{
+    display: block;
+    grid-row: span 2 / auto;
+}
+.hide{
+    display: none !important;
+}
+
+#slider
+{
+    writing-mode: bt-lr; /* IE */
+    -webkit-appearance: none; /* WebKit */
+    -webkit-app-region: drag;
+    width: 116px;
+    height: 90px;
+    overflow: hidden;
+    background:linear-gradient(90deg, #e6c991 50%, #999999 50%);
+    border-radius: 14px;
+    transform: rotate(-90deg);
+    margin: 18px 3px 2px -10px;
+    }
+    #light2Name{
+        position: absolute;
+        bottom: 10%;
+        right: 34%;
+    font-weight: 100;
+    font-size: initial;
+    }
+  #light2Per{
+      position: absolute;
+      bottom: 35%;
+      right: 25%;
+      font-size: x-large;
+      font-weight: 100;
+      pointer-events: none;
+  }
+  #light2 .on , #light2 .off{
+    top: 10px;
+    right: 12px;
+  }
+  #AC .on , #AC .off{
+    top: 23px;
+    right: 18px;
+  }
+  #AC{
+    position: relative;
+    grid-row: span 3 auto;
+  }
+  #ACPer{
+    position: absolute;
+    right: 26%;
+    bottom: 28%;
+    font-size: xx-large;
+    font-weight: 100;
+    pointer-events: none;
+}
+  #ACName{
+    position: absolute;
+    bottom: 17%;
+    left: 14%;
+    font-weight: 100;
+    font-size: initial;
+  }
+  #AC-slider{
+    -webkit-appearance: none; 
+    -webkit-app-region: drag;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    background: linear-gradient(90deg, #90cce6 62%, #999999 62%);
+    border-radius: 14px;
+    /* transform: rotate(-90deg); */
+    margin: 5%;
+  }
+  .AC-svg{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+  }
+  .normal-button-text{
+    position: absolute;
+    bottom: 5%;
+    right: 27px;
+    font-weight: 100;
+    font-size: initial;
+  }
+  .normal-svg{
+      position: absolute;
+      top: -5px;
+      left: 2px;
+    width: 32px;
+    height: 50px;
+  }
+  #chandelier{
+    width: 5.5rem;
+    border-radius: 14px;;
+    height: 120px;
+    background-color: #999999;
+    position: relative; 
+  }
+  .chandelier{
+    width: 5.5rem;
+    border-radius: 14px;
+    height: 5rem;
+    background-color: #94a7c7;
+    padding: 5px;
+  }
+  .chandelierSvg{
+    margin: 0px 24px;
+    height: 4.5rem;
+  }
+  #TV{
+    width: 5rem;
+    border-radius: 14px;;
+    height: 5rem;
+    background-color: #e7be90;
+    margin: 5% 5%;
+    padding: 5px;
+    position: relative; 
+  }
+  #Power1{
+    width: 5rem;
+    border-radius: 14px;;
+    height: 5rem;
+    background-color: #beb9e2;
+    margin: 5% 5%;
+    padding: 5px;
+    position: relative; 
+  }
+  .RGB{
+    width: 5rem;
+    border-radius: 14px;;
+    height: 5rem;
+    background-color: #e6c991;
+    margin: 5% 5%;
+    padding: 5px;
+    position: relative; 
+  }
+  .light{
+    width: 5rem;
+    border-radius: 14px;;
+    height: 5rem;
+    background-color: #e6908f;
+    margin: 5% 5%;
+    padding: 5px;
+    position: relative;
+  }
+  #light2-svg{
+    width: 30px;
+    position: absolute;
+    top: -3px;
+    left: 3px;
+  }
+  #light2{
+    position: relative; 
+    width: 98px;
+    height: 124px;
+    //transform: rotate(-90deg);
+      
+  }
+  #fan1{
+    width: 5rem;
+    border-radius: 14px;
+    height: 5rem;
+    background-color: aquamarine;
+    margin: 5% 5%;
+    padding: 5px;
+    position: relative;
+  }
+  #fan2{
+    width: 5rem;
+    border-radius: 14px;
+    height: 5rem;
+    background-color: rgb(217, 255, 127);
+    margin: 5% 5%;
+    padding: 5px;
+    position: relative;
+  }
+  
+  #slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 88px;
+    border-radius: 0 14px 14px 0;
+    overscroll-behavior: contain;
+    background-color: #e6c991;
+  }
+  #AC-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 88px;
+    border-radius: 0 14px 14px 0;
+    background-color: #90cce6;
+  }
+  
+//   input[type=range][orient=vertical]:focus {
+//     outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+//   }
+  
+//   input[type=range][orient=vertical]::-ms-track {
+//     width: 100%;
+//     cursor: pointer;
+  
+//     /* Hides the slider so custom styles can be added */
+//     background: transparent; 
+//     border-color: transparent;
+//     color: transparent;
+//   }
+  
+.search {
+    --border-radius: 10px;
+    text-align: start;
+    --background: #b8b8b8;
+    --color: #5d5d5d;
+    height: 2em;
+    width:70%;
+    margin: 15px
+}
+.back-button{
+    color:whitesmoke;
+}
+.roomsDropdown{
+    background-color:#353535;
+    width:50%;
+    color: rgb(129, 124, 125);
+    font-weight: 600;
+}
+.profile{
+  margin: 12px;
+}
+.room-device{
+    background-color: #434343;
+    margin: 40% 5% 16% 5%;
+    border-radius: 7px;
+}
+.top{
+  display: flex;
+  justify-content: space-around;
+
+}
+.row{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 84%;
+    overflow-y: scroll;
+}
+
+.device{
+    width: 5rem;
+    border-radius: 5px;
+    height: 6rem;
+    background-color: rgb(250, 94, 242);
+    margin: 5% 5%;
+    padding: 5px;
+    position: relative;
+}
+.on{
+    background-color:white;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
+.off{
+    background-color:black;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+}
